@@ -18,8 +18,8 @@ class QuotesSpider(scrapy.Spider):
                     # PageMethod("evaluate", "window.scrollBy(0, document.body.scrollHeight)"),
                     # PageMethod("wait_for_selector", "div.quote:nth-child(11)"),  # 10 per page
                 ],
-        errback=self.errback,
-            ), callback = self.parse)
+                errback=self.errback,
+                ), callback = self.parse)
     async def parse_test(self, response):
         # Retrieve the Playwright page from response meta
         page = response.meta["playwright_page"]
@@ -58,7 +58,6 @@ class QuotesSpider(scrapy.Spider):
                     if counter > 13:
                         quote_item['href'] = "https://hackernoon.com/" + quote.xpath('./@href').get()
                         quote_item['phrase'] = quote.xpath('./text()').get().strip()
-                        print(quote_item['phrase'])
                         yield quote_item
 
                 # Click the next page button
