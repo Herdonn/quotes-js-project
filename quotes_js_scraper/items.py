@@ -6,11 +6,11 @@
 import scrapy
 
 
-class QuoteItem(scrapy.Item):
+class LinkItem(scrapy.Item):
     # define the fields for your item here like:
     href = scrapy.Field()
-    phrase = scrapy.Field()
-class SpiderItem(scrapy.Item):
+    category = scrapy.Field()
+class TextItem(scrapy.Item):
     # Define the fields for your item here like:
     category = scrapy.Field()
     href = scrapy.Field()

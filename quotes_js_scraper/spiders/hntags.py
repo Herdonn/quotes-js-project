@@ -1,29 +1,32 @@
 # spiders/quotes.py
 
 import scrapy
-from quotes_js_scraper.items import QuoteItem
+from quotes_js_scraper.items import LinkItem
 from scrapy_playwright.page import PageMethod
 from bs4 import BeautifulSoup
+import time
 
 class QuotesSpider(scrapy.Spider):
     name = 'hntags'
 
     def start_requests(self):
-        url = "https://hackernoon.com/tagged"
+        # url = "https://hackernoon.com/tagged"
+        url = "https://hackernoon.com/tagged/blockchain"
         yield scrapy.Request(url, meta=dict(
                 playwright = True,
                 playwright_include_page = True, 
                 playwright_page_methods =[
-                    PageMethod('wait_for_timeout',  5000),
+                    PageMethod('wait_for_selector',  "//article"),
                     # PageMethod("evaluate", "window.scrollBy(0, document.body.scrollHeight)"),
                     # PageMethod("wait_for_selector", "div.quote:nth-child(11)"),  # 10 per page
                 ],
                 errback=self.errback,
-                ), callback = self.parse)
+                ), callback = self.parse_test)
     async def parse_test(self, response):
         # Retrieve the Playwright page from response meta
         page = response.meta["playwright_page"]
 
+        time.sleep(3)
         # Retrieve the entire HTML content of the page
         html_content = await page.content()
 
@@ -47,13 +50,13 @@ class QuotesSpider(scrapy.Spider):
         page = response.meta["playwright_page"]
         current_page = 1  # Initialize the page counter
         max_pages = 7    # Set the maximum number of pages to crawl
-
+        print("success")
         try:
             while current_page <= max_pages:  # Continue processing up to 7 pages
                 # Extract and yield items
                 counter = 0
                 for quote in response.xpath('//li/div/a'):
-                    quote_item = QuoteItem()
+                    quote_item = LinkItem()
                     counter += 1
                     if counter > 13:
                         quote_item['href'] = "https://hackernoon.com/" + quote.xpath('./@href').get()
