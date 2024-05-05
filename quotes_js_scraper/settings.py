@@ -12,6 +12,7 @@ BOT_NAME = 'quotes_js_scraper'
 SPIDER_MODULES = ['quotes_js_scraper.spiders']
 NEWSPIDER_MODULE = 'quotes_js_scraper.spiders'
 
+USER_AGENT = 'Mozilla/5.0 (iPad; CPU OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'quotes_js_scraper (+http://www.yourdomain.com)'
@@ -32,12 +33,22 @@ LOG_LEVEL = 'DEBUG'
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
 # See also autothrottle settings and docs
-# DOWNLOAD_DELAY = 3
-# RANDOMIZE_DOWNLOAD_DELAY = True
+DOWNLOAD_DELAY = 10
+RANDOMIZE_DOWNLOAD_DELAY = True
+PLAYWRIGHT_BROWSER_SETTINGS = {
+    # "args": ["--no-sandbox"],
+    # "headless": False,  # Set to False if you want to see the browser UI, otherwise True
+    "max_pages": 5,  # Maximum number of pages (tabs) per browser context
+    "timeout": 60000,  # Browser launch timeout in milliseconds
+}
+PLAYWRIGHT_LAUNCH_OPTIONS = {
+    'headless': False  # Set this to False to make the browser visible
+}
+PLAYWRIGHT_MAX_CONTEXTS = 2
 # The download delay setting will honor only one of:
 #CONCURRENT_REQUESTS_PER_DOMAIN = 16
 #CONCURRENT_REQUESTS_PER_IP = 16
-# CONCURRENT_REQUESTS_PER_DOMAIN = 8
+CONCURRENT_REQUESTS_PER_DOMAIN = 4
 # Disable cookies (enabled by default)
 #COOKIES_ENABLED = False
 

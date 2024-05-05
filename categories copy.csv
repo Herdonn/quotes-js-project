@@ -1,0 +1,149 @@
+href,phrase
+https://hackernoon.com/tagged/swift,swift
+https://hackernoon.com/tagged/object-oriented-programming,object-oriented programming
+https://hackernoon.com/tagged/html,html
+https://hackernoon.com/tagged/android-studio,android studio
+https://hackernoon.com/tagged/ansible,ansible
+https://hackernoon.com/tagged/php,php
+https://hackernoon.com/tagged/aws,aws
+https://hackernoon.com/tagged/ruby,ruby
+https://hackernoon.com/tagged/azure,azure
+https://hackernoon.com/tagged/c++,c++
+https://hackernoon.com/tagged/azure-cosmos-db,azure cosmos db
+https://hackernoon.com/tagged/csharp,csharp
+https://hackernoon.com/tagged/azure-devops,azure devops
+https://hackernoon.com/tagged/css,css
+https://hackernoon.com/tagged/azure-kubernetes-service,azure kubernetes service
+https://hackernoon.com/tagged/java,java
+https://hackernoon.com/tagged/bash,bash
+https://hackernoon.com/tagged/net,.net
+https://hackernoon.com/tagged/scala,scala
+https://hackernoon.com/tagged/python,python
+https://hackernoon.com/tagged/javascript,javascript
+https://hackernoon.com/tagged/assembly,assembly
+https://hackernoon.com/tagged/kotlin,kotlin
+https://hackernoon.com/tagged/dart,dart
+https://hackernoon.com/tagged/rust,rust
+https://hackernoon.com/tagged/haskell,haskell
+https://hackernoon.com/tagged/clojure,clojure
+https://hackernoon.com/tagged/objective-c,objective-c
+https://hackernoon.com/tagged/ios,ios
+https://hackernoon.com/tagged/android,android
+https://hackernoon.com/tagged/sql,sql
+https://hackernoon.com/tagged/react,react
+https://hackernoon.com/tagged/vue,vue
+https://hackernoon.com/tagged/angular,angular
+https://hackernoon.com/tagged/jquery,jquery
+https://hackernoon.com/tagged/typescript,typescript
+https://hackernoon.com/tagged/reactjs,reactjs
+https://hackernoon.com/tagged/vuejs,vuejs
+https://hackernoon.com/tagged/expressjs,expressjs
+https://hackernoon.com/tagged/aspnet,aspnet
+https://hackernoon.com/tagged/ruby-on-rails,ruby on rails
+https://hackernoon.com/tagged/django,django
+https://hackernoon.com/tagged/flask,flask
+https://hackernoon.com/tagged/spring-framework,spring framework
+https://hackernoon.com/tagged/laravel,laravel
+https://hackernoon.com/tagged/xamarin,xamarin
+https://hackernoon.com/tagged/go,golang
+https://hackernoon.com/tagged/net-core,.net core
+https://hackernoon.com/tagged/aspnet-core-mvc,aspnet core mvc
+https://hackernoon.com/tagged/aspnet-mvc,aspnet mvc
+https://hackernoon.com/tagged/aspnet-web-api,aspnet web api
+https://hackernoon.com/tagged/nestjs,nestjs
+https://hackernoon.com/tagged/nextjs,nextjs
+https://hackernoon.com/tagged/nuxt,nuxt
+https://hackernoon.com/tagged/symfony,symfony
+https://hackernoon.com/tagged/remix,remix
+https://hackernoon.com/tagged/gatsbyjs,gatsbyjs
+https://hackernoon.com/tagged/npm,npm
+https://hackernoon.com/tagged/redis,redis
+https://hackernoon.com/tagged/graphql,graphql
+https://hackernoon.com/tagged/nosql,nosql
+https://hackernoon.com/tagged/unity-3d,unity 3d
+https://hackernoon.com/tagged/visual-studio,visual studio
+https://hackernoon.com/tagged/visual-studio-code,visual studio code
+https://hackernoon.com/tagged/webpack,webpack
+https://hackernoon.com/tagged/wordpress,wordpress
+https://hackernoon.com/tagged/rest-api,rest-api
+https://hackernoon.com/tagged/graphql-apis,graphql apis
+https://hackernoon.com/tagged/websockets,websockets
+https://hackernoon.com/tagged/json,json
+https://hackernoon.com/tagged/xml,xml
+https://hackernoon.com/tagged/regex,regex
+https://hackernoon.com/tagged/statistical-analysis,statistical analysis
+https://hackernoon.com/tagged/predictive-modeling,predictive modeling
+https://hackernoon.com/tagged/deep-learning,deep learning
+https://hackernoon.com/tagged/web-scraping,web scraping
+https://hackernoon.com/tagged/image-processing,image processing
+https://hackernoon.com/tagged/neural-networks,neural networks
+https://hackernoon.com/tagged/data-analysis,data analysis
+https://hackernoon.com/tagged/data-visualization,data visualization
+https://hackernoon.com/tagged/docker,docker
+https://hackernoon.com/tagged/git,git
+https://hackernoon.com/tagged/gitlab,gitlab
+https://hackernoon.com/tagged/gitlab-cicd,gitlab cicd
+https://hackernoon.com/tagged/google-analytics,google analytics
+https://hackernoon.com/tagged/google-cloud,google cloud
+https://hackernoon.com/tagged/google-cloud-platform,google cloud platform
+https://hackernoon.com/tagged/google-tag-manager,google tag manager
+https://hackernoon.com/tagged/gradle,gradle
+https://hackernoon.com/tagged/grafana,grafana
+https://hackernoon.com/tagged/gulp,gulp
+https://hackernoon.com/tagged/hadoop,hadoop
+https://hackernoon.com/tagged/heroku,heroku
+https://hackernoon.com/tagged/hibernate,hibernate
+https://hackernoon.com/tagged/intellij,intellij
+https://hackernoon.com/tagged/jenkins,jenkins
+https://hackernoon.com/tagged/jira,jira
+https://hackernoon.com/tagged/jmeter,jmeter
+https://hackernoon.com/tagged/jupyter,jupyter
+https://hackernoon.com/tagged/kafka,kafka
+https://hackernoon.com/tagged/kibana,kibana
+https://hackernoon.com/tagged/kubernetes,kubernetes
+https://hackernoon.com/tagged/linux,linux
+https://hackernoon.com/tagged/mariadb,mariadb
+https://hackernoon.com/tagged/matlab,matlab
+https://hackernoon.com/tagged/maven,maven
+https://hackernoon.com/tagged/mercurial,mercurial
+https://hackernoon.com/tagged/microsoft-azure,microsoft azure
+https://hackernoon.com/tagged/microsoft-sql-server,microsoft sql server
+https://hackernoon.com/tagged/mongodb,mongodb
+https://hackernoon.com/tagged/mysql,mysql
+https://hackernoon.com/tagged/oracle,oracle
+https://hackernoon.com/tagged/pandas,pandas
+https://hackernoon.com/tagged/plsql,pl/sql
+https://hackernoon.com/tagged/postgresql,postgresql
+https://hackernoon.com/tagged/postman,postman
+https://hackernoon.com/tagged/powershell,powershell
+https://hackernoon.com/tagged/prometheus,prometheus
+https://hackernoon.com/tagged/puppet,puppet
+https://hackernoon.com/tagged/rabbitmq,rabbitmq
+https://hackernoon.com/tagged/red-hat,red hat
+https://hackernoon.com/tagged/scikit-learn,scikit-learn
+https://hackernoon.com/tagged/scss,scss
+https://hackernoon.com/tagged/selenium,selenium
+https://hackernoon.com/tagged/spring-boot,spring boot
+https://hackernoon.com/tagged/sqlite,sqlite
+https://hackernoon.com/tagged/svelte,svelte
+https://hackernoon.com/tagged/svn,svn
+https://hackernoon.com/tagged/teamcity,teamcity
+https://hackernoon.com/tagged/tensorflow,tensorflow
+https://hackernoon.com/tagged/terraform,terraform
+https://hackernoon.com/tagged/testrail,testrail
+https://hackernoon.com/tagged/thymeleaf,thymeleaf
+https://hackernoon.com/tagged/unity,unity
+https://hackernoon.com/tagged/unreal-engine,unreal engine
+https://hackernoon.com/tagged/apache-kafka,apache kafka
+https://hackernoon.com/tagged/apache-spark,apache spark
+https://hackernoon.com/tagged/cassandra,cassandra
+https://hackernoon.com/tagged/couchbase,couchbase
+https://hackernoon.com/tagged/firebase,firebase
+https://hackernoon.com/tagged/tdd,tdd
+https://hackernoon.com/tagged/bdd,bdd
+https://hackernoon.com/tagged/mvc,mvc
+https://hackernoon.com/tagged/microservices,microservices
+https://hackernoon.com/tagged/serverless-architecture,serverless architecture
+https://hackernoon.com/tagged/functional-programming,functional programming
+https://hackernoon.com/tagged/test-driven-development,test-driven development
+https://hackernoon.com/tagged/behavior-driven-development,behavior-driven development

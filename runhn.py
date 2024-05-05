@@ -5,10 +5,14 @@ from scrapy.utils.project import get_project_settings
 import queue
 import re
 from quotes_js_scraper.spiders.hnlinks import HackerNoonSpider 
-df = pd.read_csv("test.csv")
-tuple_list = list(zip(df.phrase, df.href))
-tuple_list = tuple_list[:2]
-process = CrawlerProcess(get_project_settings())
+from quotes_js_scraper.spiders.hntext import HNTextSpider
+def run_spider(filepath, spider = HackerNoonSpider):
+    df = pd.read_csv(filepath)
 
-process.crawl(HackerNoonSpider, topics_with_hrefs = tuple_list)
-process.start() 
+    # df.href = df.href + "?page=10"
+    tuple_list = list(zip(df.phrase, df.href))
+    process = CrawlerProcess(get_project_settings())
+    process.crawl(spider, topics_with_hrefs = tuple_list)
+    process.start() 
+# run_spider("categories.csv", HackerNoonSpider)
+run_spider("links.csv", HNTextSpider)

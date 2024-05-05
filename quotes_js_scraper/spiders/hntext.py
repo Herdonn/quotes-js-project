@@ -6,7 +6,7 @@ import re
 import queue
 import logging
 class HNTextSpider(scrapy.Spider):
-    name = 'hnlinks'
+    name = 'hntext'
     
     def __init__(self, topics_with_hrefs = None, *args, **kwargs):
         super(HNTextSpider, self).__init__(*args, **kwargs)
@@ -28,16 +28,15 @@ class HNTextSpider(scrapy.Spider):
             return
         page = response.meta['playwright_page']
         await page.wait_for_timeout(3000)  # Wait for 3 seconds
-        selectors = response.xpath("//article/div/h2/a")
         category = response.meta['phrase']
-        if selectors:
-            for selector in selectors:
-                item = TextItem()   
-                item['category'] = category
-                item['href'] = "https://hackernoon.com" + selector.xpath("./@href").get()  # The URL of the page being parsed
-                yield item
-            
-        
+        page_content = response.xpath("//p/text() | //h1/text() | //h2/text() | //h3/text()").getall()
+        page_joined = " ".join(page_content)
+        item = TextItem()
+        item['category'] = category
+        item['href'] = response.url
+        item['text'] = page_joined
+        yield item
+        await page.close()
     async def errback(self, failure):
         # Check if the page object is available in the meta and close it.
         page = failure.request.meta.get('playwright_page')
